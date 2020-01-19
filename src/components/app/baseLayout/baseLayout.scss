@@ -1,0 +1,22 @@
+
+div#root {
+    width: 100%;
+    height: 100%; 
+}
+.base-layout {
+    width: 100%;
+    height: 100%;
+
+    header.header {
+        width: 100%;
+        height: 22vh;
+        background: linear-gradient(to right,#fcd000 0,#ff8a00 17%,#ff253a 34%,#ff37a8 51%,#a400e1 67%,#0086ff 83%,#00d604 100%)
+      
+    }
+    main.ant-layout-content {
+        background: #f8fafc;
+    }
+    footer {
+        background: linear-gradient(to right,#fcd000 0,#ff8a00 17%,#ff253a 34%,#ff37a8 51%,#a400e1 67%,#0086ff 83%,#00d604 100%)
+    }
+}
