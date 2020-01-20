@@ -19,7 +19,6 @@ const SearchCep = () => {
     const dispatch = useDispatch();
 
     const seachOnMaps = useCallback(() => {
-        console.log(`${address.logradouro},${address.bairro},${address.uf}`.replace(/\s/g, "+"))
         dispatch(gmapsAction.getGeocode(`${address.logradouro},${address.bairro},${address.uf}`.replace(/\s/g, "+"), 'loadingGeocode'));
     }, [dispatch, address])
 
