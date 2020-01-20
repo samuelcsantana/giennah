@@ -1,15 +1,13 @@
 import React, { useRef, useLayoutEffect, useCallback } from 'react';
-
 import { useSelector, useDispatch } from 'react-redux';
 import { Typography, Spin, Row, Col } from 'antd';
+import { editToGeocode } from '~/helpers/utils'
 import gmapsAction from '~/actions/gmapsAction'
 import Map from '~/components/googleMaps/GoogleMaps';
 import Panel from '~/components/panel/Panel';
 import './searchCep.scss'
 
-
 const SearchCep = () => {
-
 
     const { Paragraph, Title } = Typography;
     const address = useSelector(state => state.localization.address);
@@ -19,8 +17,7 @@ const SearchCep = () => {
     const dispatch = useDispatch();
 
     const seachOnMaps = useCallback(() => {
-        console.log(`${address.logradouro},${address.bairro},${address.uf}`.replace(/\s/g, "+"))
-        dispatch(gmapsAction.getGeocode(`${address.logradouro},${address.bairro},${address.uf}`.replace(/\s/g, "+"), 'loadingGeocode'));
+        dispatch(gmapsAction.getGeocode(editToGeocode(address), 'loadingGeocode'));
     }, [dispatch, address])
 
     const firstUpdate = useRef(true);
@@ -33,11 +30,8 @@ const SearchCep = () => {
         seachOnMaps()
     }, [seachOnMaps]);
 
-
     return (
         <Spin spinning={loadingAddress || loadingGeocode} style={{ width: '100%' }}>
-
-
             <Row gutter={24} type='flex' justify={'center'}>
                 <Panel style={{ marginTop: '20px' }}>
                     <Col>
@@ -58,10 +52,6 @@ const SearchCep = () => {
                     </Col>
                 </Panel>
             </Row>
-
-
-
-
         </Spin>
     );
 }
