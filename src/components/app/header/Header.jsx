@@ -5,6 +5,7 @@ import './header.scss';
 import { Button } from 'antd';
 import viacepAction from '~/actions/viacepAction';
 import ReactInputMask from 'react-input-mask';
+import Panel from '~/components/panel/Panel';
 const Header = props => {
 
     const dispatch = useDispatch();
@@ -42,12 +43,19 @@ const Header = props => {
 
     return (
         <header className="header">
-            <div className="box">
+             <Row gutter={24} className="magalu">
+                        <Col span={24}>
+                        <div  > </div>
+                        </Col>
+                    </Row>
+                <div className="box">
                 <Form onSubmit={searchCep} layout="inline">
 
+                   
                     <Row type="flex" justify="center" >
+                        <Panel style={{width: 'calc(100vh - 50px)' , minHeight: '23vh', minWidth: '400px'}}>            
                         <Col className="gutter-input">
-                            <Title level={4}>Consultar</Title>
+                            <Title level={2}>Consultar</Title>
                             <Form.Item validateStatus={cepError ? 'error' : ''} help={cepError || ''} style={{ width: 'max-content' }} label="CEP">
                                 {getFieldDecorator('cep', {
                                     initialValue: "",
@@ -57,17 +65,19 @@ const Header = props => {
                                     ],
                                 })(<ReactInputMask placeholder="02050-010" mask="99999-999" maskChar={null} onChange={e => props.form.setFieldsValue({ cep: e.target.value })} />)}
                             </Form.Item>
-                            <Form.Item style={{ width: 'max-content' }}>
+                            <Form.Item style={{ width: 'max-content',  }}>
                                 <Button type="primary" className="box-button" htmlType="submit" disabled={hasErrors(getFieldsError())}>
                                     Buscar
                                 </Button>
                             </Form.Item>
 
                         </Col>
+                        </Panel>
                     </Row>
                 </Form>
 
             </div>
+
         </header>
     );
 };

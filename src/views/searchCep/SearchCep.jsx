@@ -31,14 +31,14 @@ const SearchCep = () => {
     }, [seachOnMaps]);
 
     return (
-        <Spin spinning={loadingAddress || loadingGeocode} style={{ width: '100%' }}>
+        <Spin spinning={loadingAddress || loadingGeocode} style={{ width: '100%' , }}>
+            <div className="box-cep">
             <Row gutter={24} type='flex' justify={'center'}>
-                <Panel style={{ marginTop: '20px' }}>
+                <Panel style={{ marginTop: '20px', width: 'calc(100vh - 50px)', minWidth: '400px'  }}>
                     <Col>
                         <Title level={3}>{address.logradouro}</Title>
-                        <Paragraph>{address.bairro}</Paragraph>
-                        <Paragraph>{`${address.localidade} - ${address.uf}`}</Paragraph>
-                        <Paragraph>{address.cep}</Paragraph>
+                        <Paragraph style={{fontSize: '1.2em'}}>Endereço: {address.bairro}, {`${address.localidade} - ${address.uf}`}</Paragraph>
+                        <Paragraph style={{fontSize: '1.2em'}}>Cep: {address.cep}</Paragraph>
 
                         <div className="gmaps">
                             <Map
@@ -52,6 +52,7 @@ const SearchCep = () => {
                     </Col>
                 </Panel>
             </Row>
+            </div>
         </Spin>
     );
 }
