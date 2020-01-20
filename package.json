@@ -23,7 +23,9 @@
     "react-scripts": "3.3.0",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "customize-cra": "^0.9.1",
+    "react-app-rewired": "^2.1.5"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -52,8 +54,6 @@
     ]
   },
   "devDependencies": {
-    "customize-cra": "^0.9.1",
-    "react-app-rewired": "^2.1.5",
     "redux-devtools-extension": "^2.13.8"
   }
 }
