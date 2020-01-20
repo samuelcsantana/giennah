@@ -12,8 +12,11 @@ export const endLoading = identifier => ({
     loading: { [identifier]: false },
 });
 
+export const editToGeocode = address => { return `${address.logradouro},${address.bairro},${address.uf}`.replace(/\s/g, "+") };
+
 export default {
     endLoading,
     startLoading,
-    not
+    not,
+    editToGeocode
 };
