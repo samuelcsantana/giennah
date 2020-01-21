@@ -10,7 +10,7 @@ const mockStore = configureMockStore([thunk]);
 describe('App', () => {
   it('should render app and show a map and box used for search by cep', () => {
     const store = mockStore({
-      localization:  {
+      localization: {
         address: {
           cep: '02050-010',
           logradouro: 'Rua Miguel Mentem',

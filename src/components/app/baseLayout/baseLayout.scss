@@ -1,7 +1,7 @@
 
 div#root {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     min-height: 600px;
     overflow-y: auto;
 }
@@ -18,11 +18,11 @@ div#root {
         width: 100%;
         min-height: 22vh;
         background-color: #9B9ECE;
-      
+
     }
     main.ant-layout-content {
       background-color: #9B9ECE;
-       
+
     }
     footer {
         overflow: hidden;
@@ -30,5 +30,5 @@ div#root {
         background: linear-gradient(to right,#fcd000 0,#ff8a00 17%,#ff253a 34%,#ff37a8 51%,#a400e1 67%,#0086ff 83%,#00d604 100%);
         padding: 0px;
     }
-   
+
 }
