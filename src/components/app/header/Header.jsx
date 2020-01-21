@@ -54,13 +54,8 @@ const Header = ({ form }) => {
       </Row>
       <div className="box">
         <Form onSubmit={searchCep} layout="inline">
-          <Row type="flex" justify="center">
+          <Row type="flex" justify="center" >
             <Panel
-              style={{
-                width: 'calc(100vh - 50px)',
-                minHeight: '23vh',
-                minWidth: '400px',
-              }}
             >
               <Col className="gutter-input">
                 <Title level={2}>Consultar</Title>

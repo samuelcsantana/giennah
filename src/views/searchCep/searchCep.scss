@@ -1,9 +1,17 @@
 .gmaps {
     position: relative;
     width: 100% !important;
-    height: 40vh !important;
-}
+    height: calc(100vh - 498px);
 
-.box-cep {
+  }
+
+  .box-cep {
     padding: 10px !important;
-}
+  }
+
+  @media screen and (max-height: 560px) and (orientation: landscape){
+    .gmaps {
+      position: initial !important;
+      }
+  }
+

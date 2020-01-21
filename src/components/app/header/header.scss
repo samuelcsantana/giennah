@@ -1,8 +1,6 @@
- header {  
+ header {
             .box {
                 padding: 10px;
-                overflow-x: auto;
-            
                 .gutter-span {
                     display: flex;
                     justify-content: flex-end;
@@ -10,23 +8,21 @@
                     .box-span {
                     margin-right: 14px;
                     margin-bottom: 0px;
-        
+
                 }
               }
-           
-            
               .gutter-input {
-                    
+
                   input {
-                    height: 30px;    
+                    height: 30px;
                 }
                 .box-button {
                   margin-top: 3px;
                   margin-left: 10px;
                 }
               }
-              
+
             }
         }
-  
+
 

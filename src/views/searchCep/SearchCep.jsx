@@ -36,11 +36,6 @@ const SearchCep = () => {
       <Row gutter={24} type="flex" justify="center">
         <Panel
           className="searchCepPanel"
-          style={{
-            marginTop: '20px',
-            width: 'calc(100vh - 50px)',
-            minWidth: '400px',
-          }}
         >
           <Spin
             spinning={loadingAddress || loadingGeocode}
