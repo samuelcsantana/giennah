@@ -3,7 +3,7 @@ import utils from '~/helpers/utils';
 import { FETCH_CEP } from '~/helpers/enums/constants/ActionType';
 import viacepservice from '~/services/viacepService';
 
-const getCep = (
+export const getCep = (
   params = '',
   LOADING_IDENTIFICATOR = '',
   fnCallback = () => { }

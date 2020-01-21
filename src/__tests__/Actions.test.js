@@ -14,14 +14,14 @@ describe('select_actions', () => {
 
   describe('gmapsActions', () => {
     test('Dispatches the getGeocode action and payload', () => {
-      store.dispatch(gmaps.default.getGeocode("Rua+Miguel+Mentem,Vila+Guilherme", "loadingGeocode"));
+      store.dispatch(gmaps.getGeocode("Rua+Miguel+Mentem,Vila+Guilherme", "loadingGeocode"));
       expect(store.getActions()).toMatchSnapshot();
     });
   });
 
   describe('viacepAction', () => {
     test('Dispatches the getCep action and payload', () => {
-      store.dispatch(viacep.default.getCep("02050-010", "loadingAddress"));
+      store.dispatch(viacep.getCep("02050-010", "loadingAddress"));
       expect(store.getActions()).toMatchSnapshot();
     });
   });

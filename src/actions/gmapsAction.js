@@ -3,7 +3,7 @@ import utils from '~/helpers/utils';
 import { FETCH_GEOCODE } from '~/helpers/enums/constants/ActionType';
 import service from '~/services/gmapsService';
 
-const getGeocode = (
+export const getGeocode = (
   params = '',
   LOADING_IDENTIFICATOR = '',
   fnCallback = () => { }
