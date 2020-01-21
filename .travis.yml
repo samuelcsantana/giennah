@@ -11,7 +11,6 @@ before_install:
   - docker-compose --version
 
 script:
-  - cp .env.example .env
   - docker-compose run --rm serverless npm install
   - docker-compose run --rm serverless npm run flow
   - docker-compose run --rm serverless npm test
