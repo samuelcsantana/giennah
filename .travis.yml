@@ -1,3 +1,17 @@
-language: node_js
-node_js:
-  - '8'
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - sudo rm /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/1.21.1/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+  - docker-compose --version
+
+script:
+  - cp .env.example .env
+  - docker-compose run --rm serverless npm install
+  - docker-compose run --rm serverless npm run flow
+  - docker-compose run --rm serverless npm test
