@@ -32,3 +32,45 @@ div#root {
     }
 
 }
+
+@media screen and (max-width: 400px) {
+  .panel {
+      max-width: 40vw !important;
+      min-width: 320px !important;
+      position: fixed;
+  }
+  .panel.searchCepPanel {
+     margin-top: 7vh !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .panel {
+      width: 30vw !important;
+      min-width: 300px !important;
+      height: 200px;
+      position: fixed;
+
+      margin-left: -15px;
+  }
+  .panel.searchCepPanel {
+     margin-top: 15vh !important;
+     height: 380px;
+     overflow-y: auto
+  }
+}
+
+@media screen and (max-height: 667px) {
+  .panel {
+      width: 30vw !important;
+      min-width: 300px !important;
+      height: 200px;
+      position: fixed;
+
+      margin-left: -15px;
+  }
+  .panel.searchCepPanel {
+     margin-top: 15vh !important;
+     height: 380px;
+     overflow-y: auto
+  }
+}

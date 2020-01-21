@@ -35,6 +35,7 @@ const SearchCep = () => {
     <div className="box-cep">
       <Row gutter={24} type="flex" justify="center">
         <Panel
+          className="searchCepPanel"
           style={{
             marginTop: '20px',
             width: 'calc(100vh - 50px)',
