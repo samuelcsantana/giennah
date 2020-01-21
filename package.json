@@ -11,6 +11,8 @@
     "babel-plugin-import": "^1.13.0",
     "customize-cra": "^0.9.1",
     "dotenv": "^8.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
     "google-maps-react": "^2.0.2",
@@ -31,11 +33,11 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2"
+    "serve": "^11.3.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
+    "prod": "serve -s build",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --watchAll",
     "eject": "react-scripts eject"
