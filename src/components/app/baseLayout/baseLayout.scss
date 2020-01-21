@@ -41,19 +41,59 @@ input#cepForm_cep {
 
 }
 
-@media screen and (min-width: 667px) {
-    .panel {
-      margin-left: calc(100vw - 1500px);
-      margin-right: calc(100vw - 1500px);
-      }
-
-      header {
-      .panel {
-        height: calc(100vh - 600px) !important;
-      }
-    }
+@media screen and (min-height: 680px) {
+  .panel.searchCepPanel {
+    min-height: 74vh !important;
+    overflow: hidden !important;
+  }
 }
 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (min-height: 754px) {
+
+  body {
+    height: auto !important;
+    width: auto !important;
+  }
+  header .panel {
+    height: 20vh;
+  }
+  .gmaps {
+   height: 51vh;
+ } }
+@media (min-width: 1200px) and (min-height: 900px) {
+
+  body {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  header .panel {
+    height: 16vh;
+  }
+  .gmaps {
+   height: 55vh;
+ }
+}
+@media (min-width: 500px) and (min-height: 500px) {
+  header .panel {
+    height: 26vh;
+    max-height: 160px;
+  }
+}
 .panel {
   width: calc(100vw - 90px);
 }
@@ -61,3 +101,4 @@ input#cepForm_cep {
   min-height: calc(100vh - 300px);
   overflow: auto;
 }
+
