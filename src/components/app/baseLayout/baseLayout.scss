@@ -41,36 +41,46 @@ input#cepForm_cep {
 
 }
 
-@media screen and (min-height: 680px) {
+@media screen and (min-height: 480px) {
   .panel.searchCepPanel {
-    min-height: 74vh !important;
+    min-height: 68vh !important;
     overflow: hidden !important;
   }
 }
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
+@media (max-width: 575.98px) {
+ }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
 
   }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+  @media (min-height: 754px) {
+    .base-layout header.header {
+      min-height: 10vh !important;
+      max-height: 300px !important;
+    }
+  }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and (min-height: 754px) {
 
   body {
-    height: auto !important;
-    width: auto !important;
+    // height: auto !important;
+    // width: auto !important;
   }
   header .panel {
     height: 20vh;
+
   }
   .gmaps {
    height: 51vh;
@@ -87,6 +97,7 @@ input#cepForm_cep {
   .gmaps {
    height: 55vh;
  }
+
 }
 @media (min-width: 500px) and (min-height: 500px) {
   header .panel {
