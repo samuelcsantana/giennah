@@ -74,10 +74,6 @@ input#cepForm_cep {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and (min-height: 754px) {
 
-  body {
-    // height: auto !important;
-    // width: auto !important;
-  }
   header .panel {
     height: 20vh;
 
@@ -104,6 +100,21 @@ input#cepForm_cep {
     height: 26vh;
     max-height: 160px;
   }
+}
+@media (max-height: 664px) {
+
+  .gmaps {
+    position: initial;
+  }
+
+}
+
+@media (min-height: 664px) {
+
+  .gmaps {
+    height: calc(100vh - 391px);
+  }
+
 }
 .panel {
   width: calc(100vw - 90px);
