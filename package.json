@@ -41,7 +41,7 @@
     "start": "react-app-rewired start",
     "prod": "serve -s build",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test -u --watchAll",
+    "test": "react-app-rewired test -u",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
