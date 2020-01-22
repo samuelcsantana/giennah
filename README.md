@@ -27,7 +27,7 @@ A aplicação foi desenvolvida em javascript, utilizando :
 - [Jest](https://jestjs.io/docs/en/tutorial-react)
 - [Arquitetura](https://www.treinaweb.com.br/blog/flux-descubra-o-motivo-do-sucesso-dessa-arquitetura-em-grandes-empresas/) [Flux](https://www.treinaweb.com.br/blog/flux-descubra-o-motivo-do-sucesso-dessa-arquitetura-em-grandes-empresas/)
 
-[Acesse](https://myaddress-luizalabs.herokuapp.com/) [a](https://myaddress-luizalabs.herokuapp.com/) [aplicação](https://myaddress-luizalabs.herokuapp.com/) [aqui!](https://myaddress-luizalabs.herokuapp.com/)
+
 
 <div id='st3' />
 
