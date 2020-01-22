@@ -6,7 +6,6 @@ import * as viacep from '~/actions/viacepAction';
 export const mockStore = configureMockStore([thunk]);
 const store = mockStore();
 
-
 describe('select_actions', () => {
   beforeEach(() => { // Runs before each test in the suite
     store.clearActions();
@@ -25,6 +24,5 @@ describe('select_actions', () => {
       expect(store.getActions()).toMatchSnapshot();
     });
   });
-
 
 });
