@@ -1,5 +1,4 @@
 ![Build status](https://travis-ci.com/samuelcsantana/desafio-luizalabs.svg?token=iG2xRybfkb9yunYCdUQT&branch=master)
-# Desafio Luizalabs
 
 - [Introdução](#st1)
 - [A Aplicação](#st2)
@@ -12,7 +11,7 @@
 
 ## Introdução
 
-Esta aplicação é parte do processo de seleção na Luizalabs, foi solicitado o desenvolvimento de uma aplicação web (single page app) para consulta de endereço a partir do CEP.
+Aplicação web (single page app) para consulta de endereço a partir do CEP.
 
 <div id='st2' />
 
@@ -64,4 +63,4 @@ Ao final,
 
 # Link da Aplicação
 
-A Aplicação está disponível no Heroku atráves deste [Link](https://myaddress-luizalabs.herokuapp.com/).
+A Aplicação está disponível no Heroku atráves deste [Link](https://giennah.herokuapp.com/).
