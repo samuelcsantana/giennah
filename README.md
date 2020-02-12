@@ -33,10 +33,10 @@ A aplicação foi desenvolvida em javascript, utilizando :
 ## Executando a Aplicação
 
 ```sh
-  git clone https://github.com/samuelcsantana/desafio-luizalabs.git
+  git clone https://github.com/samuelcsantana/giennah.git
 ```
 ```sh
-  cd desafio-luizalabs
+  cd giennah
 ```
 ```sh
   yarn ou npm i
