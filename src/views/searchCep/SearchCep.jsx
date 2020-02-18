@@ -34,23 +34,18 @@ const SearchCep = () => {
   return (
     <div className="box-cep">
       <Row gutter={24} type="flex" justify="center">
-        <Panel
-          className="searchCepPanel"
-        >
+        <Panel className="searchCepPanel">
           <Spin
             spinning={loadingAddress || loadingGeocode}
-            style={{ width: '100%' }}
+            className="width-max"
           >
             <Col>
               <Title level={3}>{address.logradouro}</Title>
-              <Paragraph style={{ fontSize: '1.2em' }}>
+              <Paragraph >
                 Endereço: {address.bairro},
                 {`${address.localidade} - ${address.uf}`}
               </Paragraph>
-              <Paragraph style={{ fontSize: '1.2em' }}>
-                Cep: {address.cep}
-              </Paragraph>
-
+              <Paragraph> Cep: {address.cep}</Paragraph>
               <div className="gmaps">
                 <Map
                   initialCenter={geocode}

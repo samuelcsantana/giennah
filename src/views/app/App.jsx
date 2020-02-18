@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import Routers from '~/components/app/routers/Routers';
 import BaseLayout from '~/components/app/baseLayout/BaseLayout';
-import './App.css';
+import './App.scss';
 
 const App = () => {
   return (
