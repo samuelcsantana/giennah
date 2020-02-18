@@ -1,4 +1,4 @@
-![Build status](https://travis-ci.com/samuelcsantana/desafio-luizalabs.svg?token=iG2xRybfkb9yunYCdUQT&branch=master)
+[![Build Status](https://travis-ci.com/samuelcsantana/giennah.svg?branch=master)](https://travis-ci.com/samuelcsantana/giennah)
 # Giennah
 
 - [Introdução](#st1)

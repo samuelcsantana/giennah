@@ -54,15 +54,14 @@ const Header = ({ form }) => {
       </Row>
       <div className="box">
         <Form onSubmit={searchCep} layout="inline">
-          <Row type="flex" justify="center" >
-            <Panel
-            >
+          <Row type="flex" justify="center">
+            <Panel>
               <Col className="gutter-input">
                 <Title level={2}>Consultar</Title>
                 <Form.Item
                   validateStatus={cepError ? 'error' : ''}
                   help={cepError || ''}
-                  style={{ width: 'max-content' }}
+                  className="max-content"
                   label="CEP"
                 >
                   {getFieldDecorator('cep', {
@@ -84,7 +83,7 @@ const Header = ({ form }) => {
                     />
                   )}
                 </Form.Item>
-                <Form.Item style={{ width: 'max-content', }}>
+                <Form.Item className="max-content">
                   <Button
                     type="primary"
                     className="box-button"

@@ -14,10 +14,7 @@ input#cepForm_cep {
   padding: 10px;
 }
 .base-layout {
-    width: 100%;
-    height: 100%;
-    min-height: 400px;
-    min-width: 400px;
+
     .magalu {
         height: 5px;
         background: linear-gradient(to right,#fcd000 0,#ff8a00 17%,#ff253a 34%,#ff37a8 51%,#a400e1 67%,#0086ff 83%,#00d604 100%);
@@ -57,7 +54,9 @@ input#cepForm_cep {
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { }
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+ }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -100,6 +99,9 @@ input#cepForm_cep {
     height: 26vh;
     max-height: 160px;
   }
+  .panel {
+    min-width: 98vw;
+  }
 }
 @media (max-height: 664px) {
 
@@ -114,11 +116,14 @@ input#cepForm_cep {
   .gmaps {
     height: calc(100vh - 391px);
   }
+  .box-cep {
+    padding: 15px !important;
+  }
+}
 
-}
-.panel {
-  width: calc(100vw - 90px);
-}
+// .panel {
+//   max-width: 90vw;
+// }
 .panel.searchCepPanel {
   min-height: calc(100vh - 300px);
   overflow: auto;

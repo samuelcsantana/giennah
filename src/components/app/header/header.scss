@@ -1,32 +1,35 @@
  header {
+    .box {
+        padding: 10px;
 
+        .gutter-span {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
 
-            .box {
-                padding: 10px;
+            .box-span {
+            margin-right: 14px;
+            margin-bottom: 0px;
 
-                .gutter-span {
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: flex-end;
-                    .box-span {
-                    margin-right: 14px;
-                    margin-bottom: 0px;
-
-                }
-              }
-              .gutter-input {
-
-                  input {
-                    height: 30px;
-                }
-                .box-button {
-                  margin-top: 3px;
-                  margin-left: 10px;
-                }
-              }
-
-            }
         }
+      }
+      .gutter-input {
+
+          input {
+            height: 30px;
+        }
+        .box-button {
+          margin-top: 3px;
+          margin-left: 10px;
+        }
+      }
+
+    }
+
+    .max-content {
+      width: max-content;
+    }
+}
 
 
 
