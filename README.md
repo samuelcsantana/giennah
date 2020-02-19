@@ -23,7 +23,7 @@ A aplicação foi desenvolvida em javascript, utilizando :
 - [customize-cra](https://github.com/arackaf/customize-cra)
 - [Antd](https://ant.design/docs/react/introduce)
 - [Travis](https://docs.travis-ci.com/user/tutorial/)
-- [Heroku](https://www.heroku.com/what) (continuous deployment)
+- [Heroku](https://www.heroku.com/what) (deploy contínuo)
 - [Jest](https://jestjs.io/docs/en/tutorial-react)
 - [Arquitetura](https://www.treinaweb.com.br/blog/flux-descubra-o-motivo-do-sucesso-dessa-arquitetura-em-grandes-empresas/) [Flux](https://www.treinaweb.com.br/blog/flux-descubra-o-motivo-do-sucesso-dessa-arquitetura-em-grandes-empresas/)
 
