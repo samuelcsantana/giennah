@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Views
 import SearchCep from '~/views/searchCep/SearchCep'
 
 export const routes = [
