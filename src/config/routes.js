@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SearchCep from '~/views/searchCep/SearchCep'
+import SearchCep from '~/views/searchCep/SearchCep';
 
 export const routes = [
   {

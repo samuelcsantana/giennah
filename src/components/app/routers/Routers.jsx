@@ -1,33 +1,21 @@
 import React from 'react';
-import {
-  Route,
-  Switch,
-  Redirect,
-  BrowserRouter as Router,
-} from 'react-router-dom';
-import _ from 'lodash';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import uuid from 'react-uuid';
 import routes from '~/config/routes';
 import utils from '~/helpers/utils';
 
 export const Anonymous = props => {
-  const anonymousRoutes = _.filter(
-    routes,
+  const anonymousRoutes = routes.filter(
     r => utils.not(r.onlyAuthorized) || r.onlyAuthorized === 'both'
   );
+
   return (
-    <Router>
-      {anonymousRoutes.map((route, index) => (
-        <Switch key={index}>
-          <Route
-            key={index}
-            path={route.path}
-            exact={route.exact}
-            component={route.view}
-          />
-        </Switch>
+    <Switch>
+      {anonymousRoutes.map(({ path, exact, view }) => (
+        <Route key={uuid()} path={path} exact={exact} component={view} />
       ))}
       <Redirect to="/" />
-    </Router>
+    </Switch>
   );
 };
 
